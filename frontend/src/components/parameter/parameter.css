@@ -1,0 +1,21 @@
+.parameters {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .parameters label {
+    margin-top: 10px;
+  }
+  
+  .parameters input {
+    width: 100%;
+  }
+  
+  .parameters select {
+    width: 100%;
+  }
+  
+  .parameters input[type="file"] {
+    width: 100%;
+  }
+  

@@ -1,0 +1,21 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #20222b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  color:aliceblue;
+}
