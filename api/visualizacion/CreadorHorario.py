@@ -40,7 +40,11 @@ def generar_imagen(array_salones, array_hora_dia, horarios):
 
         # Coloca el nombre de la materia en la celda correspondiente
         cell = tabla.get_celld()[(fila + 1, columna)]
-        cell.get_text().set_text(horario.materia + '\n Seccion ' + horario.seccion + '\n' 
+        
+        # Dividimos la cadena de texto en dos partes        
+        materia_primera_parte, materia_segunda_parte = dividir_cadena(horario.materia, 26)
+
+        cell.get_text().set_text(materia_primera_parte + materia_segunda_parte + '\n Seccion ' + horario.seccion + '\n' 
                                  + horario.profesor + '\n' + horario.carrera + '\n' + horario.semestre )
         # Añadir un fondo de color según el valor de horario.color
         if horario.color == "red":
@@ -59,3 +63,19 @@ def generar_imagen(array_salones, array_hora_dia, horarios):
     # Mostrar la tabla
     # plt.show()
 
+def dividir_cadena(cadena, longitud):
+  """
+  Divide una cadena de texto en dos partes, la primera de longitud `longitud` y la segunda el resto de la cadena.
+
+  Args:
+    cadena: La cadena de texto a dividir.
+    longitud: La longitud de la primera parte de la cadena.
+
+  Returns:
+    Un tuple con la primera y segunda parte de la cadena.
+  """
+
+  if len(cadena) <= longitud:
+    return cadena, ''
+  else:
+    return cadena[:longitud], '\n' + cadena[longitud:]

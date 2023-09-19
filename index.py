@@ -17,7 +17,7 @@ from app import app  # Importa la instancia de la aplicación Flask desde app.py
 
 # # ajustar la hora del dia
 # hora_dia = array_hora_dia('15:20', 50, '22:00')
-# # hora_dia = array_hora_dia('7:00', 30, '9:00')
+# # hora_dia = array_hora_dia('7:00', 30, '8:00')
 
 # # Crear el arrays de objetos
 # clases_salones = obtener_clase_salones(path_salon)
@@ -29,15 +29,17 @@ from app import app  # Importa la instancia de la aplicación Flask desde app.py
 # # Generar el horario por la decision elegida (prioridad)
 # scheduler = Scheduler()
 # scheduler.cargar_datos_decision(clases_salones, profesores, carreras, materias, asignaciones, hora_dia)
-# scheduler.seleccion_priridad()
+# scheduler.seleccion_priridad("salon")
 
 # # lista del horario completo
 # lista_horarios = scheduler.list_horarios()
 # conflictos = scheduler.list_conflictos()
 # eficiencia = scheduler.eficiencia_total()
 
-# # for lista in lista_horarios:
+# # for lista in conflictos:
 # #     print(lista, "\n")
+
+# # print(eficiencia, "\n")
 
 # # Mostrar imagen
 # generar_imagen(array_salones,hora_dia,lista_horarios)

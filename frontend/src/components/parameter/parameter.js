@@ -87,9 +87,8 @@ const Parameters = ( {obtener_results}) => {
       <div>
         <label>Prioridad:</label>
         <select value={prioridad} onChange={handlePrioridadChange}>
-          <option value="materia">Materia</option>
-          <option value="profesores">Profesores</option>
-          <option value="salones">Salones</option>
+          <option value="materia">Materias</option>
+          <option value="salon">Salones</option>
         </select>
       </div>
       <div>
