@@ -9,7 +9,6 @@ const Parameters = ( {obtener_results}) => {
   const [horarioFinal, setHorarioFinal] = useState("22:00");
   const [duracion, setDuracion] = useState(50)
   const [prioridad, setPrioridad] = useState("materia");
-  const [archivos, setArchivos] = useState([]);
   const [mensaje, setMensaje] = useState("");
 
   const handleHorarioInicialChange = (event) => {
@@ -26,10 +25,6 @@ const Parameters = ( {obtener_results}) => {
 
   const handlePrioridadChange = (event) => {
     setPrioridad(event.target.value);
-  };
-
-  const handleArchivosChange = (event) => {
-    setArchivos(event.target.files);
   };
 
   const handleSubmit = async () => {

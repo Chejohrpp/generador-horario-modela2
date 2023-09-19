@@ -1,0 +1,19 @@
+nombre_carrera,nombre_materia,semestre
+area comun,Social Humanistica 1,I
+AREA COMUN,Orientación Y Liderazgo,I
+AREA COMUN,Química 1,I
+AREA COMUN,Social Humanistica 2,I
+AREA COMUN,Orientación Y Liderazgo 2,I
+AREA COMUN,Química 2,I
+AREA COMUN,Matemática Intermedia 2,IV
+Ingenieria de Sistemas,Introducción A La Programación Y Computación 1,III
+Ingenieria de Sistemas,Estructura De Datos,V
+Ingenieria de Sistemas,Organización De Lenguajes Y Compiladores 1,V
+Ingenieria de Sistemas,Análisis Probabilístico,V
+Ingenieria de Sistemas,Modelación Y Simulación,IX
+Ingenieria de Sistemas,Sistemas Organizacionales Y Gerenciales,IX
+Ingenieria de Sistemas,Inteligencia Artificial,IX
+Ingenieria de Sistemas,Seminario De Sistemas 2,IX
+MECANICA,Materia Mecánica,X
+CIVIL,Materia Civil,X
+INDUSTRIAL,Materia Industrial,X
